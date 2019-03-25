@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'learning_logs',
-    'bootstrap3'
+    'bootstrap3',
+    'mdeditor'
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,6 @@ STATIC_URL = '/static/'
 BOOTSTRAP3 = {
     'include_jquery': True,
 }
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+MEDIA_URL = '/media/'
