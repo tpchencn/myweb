@@ -11,8 +11,13 @@
                     {{ entry.date_added|date:'M d, Y H:i' }}
                 </h3>
             </div>
+            <div class="panel-heading">
+                <h3>
+                    {{ entry.title }}
+                </h3>
+            </div>
             <div class="panel-body">
-                {{ entry.text|linebreaks }}
+                {{ entry.content|linebreaks }}
             </div>
         </div> <!-- panel -->
     {% empty %}
