@@ -12,4 +12,8 @@ urlpatterns = [
     url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
     # 关于
     url(r'^about/$', views.about, name='about'),
+    # 显示所有的主题
+    url(r'^books/$', views.books, name="books"),
+    # 特定主题的详细页面
+    url(r'^readnote/(?P<topic_id>\d+)/$', views.readnotes(), name='topic'),
 ]
